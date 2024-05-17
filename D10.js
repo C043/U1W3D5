@@ -320,6 +320,15 @@ console.log("Oggi è il mio compleanno?", isTodayMyBirthday(yesterday));
   in esso la proprietà chiamata come la stringa passata come secondo parametro.
 */
 
+console.log("ESERCIZIO 11");
+
+const deleteProp = function (obj, str) {
+  delete obj[str];
+  return obj;
+};
+
+console.log(deleteProp(me, "surname"));
+
 /* ESERCIZIO 12
   Scrivi una funzione chiamata "newestMovie" che trova il film più recente nell'array "movies" fornito.
 */
