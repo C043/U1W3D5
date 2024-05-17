@@ -453,8 +453,6 @@ const movies = [
 
 console.log("ESERCIZIO 12");
 
-console.log(movies);
-
 const newestMovie = function (array) {
   let newMovie = array[0];
   for (let i = 0; i < array.length; i++) {
@@ -499,7 +497,7 @@ console.log("ESERCIZIO 15");
 
 const onlyInLastMillennium = function (array) {
   const lastMillennium = array.filter(
-    (movie) => movie.Year < 2000 && movie.Year > 1000
+    (movie) => movie.Year < 2000 && movie.Year >= 1000
   );
   return lastMillennium;
 };
@@ -723,7 +721,7 @@ const tree = (n) => {
   }
 };
 
-tree(3);
+tree(10);
 
 /* ESERCIZIO 29
   Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e ritorna true se il numero fornito è un numero primo.
