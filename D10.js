@@ -219,6 +219,31 @@ console.log(isThisAnEmail("mariofragnitoph@gmail.com"));
   Scrivi una funzione chiamata "whatDayIsIt" che ritorna il giorno della settimana corrente.
 */
 
+console.log("ESERCIZIO 7");
+
+const whatDayIsIt = function () {
+  const now = new Date();
+  const day = now.getDay();
+  switch (day) {
+    case 1:
+      return "Lunedì";
+    case 2:
+      return "Martedì";
+    case 3:
+      return "Mercoledì";
+    case 4:
+      return "Giovedì";
+    case 5:
+      return "Venerdì";
+    case 6:
+      return "Sabato";
+    case 7:
+      return "Domenica";
+  }
+};
+
+console.log("Oggi è:", whatDayIsIt());
+
 /* ESERCIZIO 8
   Scrivi una funzione chiamata "rollTheDices" che riceve un numero come parametro.
   Deve invocare la precedente funzione dice() il numero di volte specificato nel parametro, e deve tornare un oggetto contenente una proprietà "sum":
