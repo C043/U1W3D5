@@ -146,6 +146,23 @@ console.log("I love coding =>", splitMe("I love coding"));
   Se il valore booleano è true la funzione deve ritornare la stringa senza il primo carattere, altrimenti la deve ritornare senza l'ultimo.
 */
 
+console.log("ESERCIZIO 4");
+
+const deleteOne = function (str, boolean) {
+  if (typeof boolean === "boolean" && boolean) {
+    const trueStr = str.slice(1);
+    return trueStr;
+  } else if (typeof boolean === "boolean" && boolean === false) {
+    const falseStr = str.slice(0, str.length - 1);
+    return falseStr;
+  } else {
+    return "Devi inserire un booleano valido";
+  }
+};
+
+console.log("I-love-coding, true =>", deleteOne("I-love-coding", true));
+console.log("I-love-coding, false =>", deleteOne("I-love-coding", false));
+
 /* ESERCIZIO 5
   Crea una funzione chiamata "onlyLetters" che riceve una stringa come parametro e la ritorna eliminando tutte le cifre numeriche.
 
