@@ -60,6 +60,18 @@ removeAge(me);
   Crea del codice per aggiungere programmaticamente all'oggetto precedentemente creato un array chiamato "skills", contenente i linguaggi di programmazione che conosci.
 */
 
+console.log("ESERCIZIO E");
+
+// Lo so che HTML e CSS non sono veri e propri linguaggi di programmazione, però volevo fare un array con più elementi
+const skills = ["HTML", "CSS", "JavaScript"];
+
+const addSkills = function (obj, array) {
+  obj.skills = array;
+  console.log(obj);
+};
+
+addSkills(me, skills);
+
 /* ESERCIZIO F
   Crea un pezzo di codice per aggiungere un nuovo elemento all'array "skills" contenuto nell'oggetto "me".
 */
