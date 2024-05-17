@@ -25,7 +25,7 @@ console.log(sum);
 
 console.log("ESERCIZIO B");
 
-const random = Math.floor(Math.random() * 20);
+const random = Math.floor(Math.random() * 21);
 
 console.log(random);
 
@@ -121,8 +121,10 @@ console.log("ESERCIZIO 2");
 
 const whoIsBigger = (a, b) => {
   let biggerNum = a;
-  if (b > a) {
-    biggerNum = b;
+  if (b === a) {
+    return "I numeri sono uguali";
+  } else if (b > a) {
+    return (biggerNum = b);
   }
   return biggerNum;
 };
