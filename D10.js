@@ -728,3 +728,16 @@ tree(3);
 /* ESERCIZIO 29
   Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e ritorna true se il numero fornito è un numero primo.
 */
+
+console.log("ESERCIZIO 29");
+
+const isItPrime = (n) => {
+  for (let i = 2, b = Math.sqrt(n); i <= b; i++) {
+    if (n % i === 0) {
+      return false;
+    }
+  }
+  return n > 1;
+};
+
+console.log(isItPrime(11));
