@@ -89,6 +89,15 @@ addSkill(me, "ES6");
   Crea un pezzo di codice per rimuovere programmaticamente l'ultimo elemento dall'array "skills" contenuto nell'oggetto "me".
 */
 
+console.log("ESERCIZIO G");
+
+const removeLastSkill = function (obj) {
+  obj.skills.pop();
+  console.log(obj);
+};
+
+removeLastSkill(me);
+
 // Funzioni
 
 /* ESERCIZIO 1
