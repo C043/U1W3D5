@@ -498,7 +498,9 @@ console.log(onlyTheYears(movies));
 console.log("ESERCIZIO 15");
 
 const onlyInLastMillennium = function (array) {
-  const lastMillennium = array.filter((movie) => movie.Year < 2000);
+  const lastMillennium = array.filter(
+    (movie) => movie.Year < 2000 && movie.Year > 1000
+  );
   return lastMillennium;
 };
 
@@ -595,6 +597,16 @@ console.log(getTds());
 /* ESERCIZIO 22
   Scrivi una funzione che, tramite un ciclo, stampa in console il testo contenuto in ogni tag <td> all'interno della pagina.
 */
+
+console.log("ESERCIZIO 22");
+
+const printTds = () => {
+  const tds = getTds();
+  for (let i = 0; i < tds.length; i++) {
+    const currenTd = tds[i].innerText;
+    console.log(currenTd);
+  }
+};
 
 /* ESERCIZIO 23
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
