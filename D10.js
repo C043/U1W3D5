@@ -555,6 +555,21 @@ console.log(searchAndDivide("Lord"));
   Scrivi una funzione chiamata "removeIndex" che riceve un numero come parametro e ritorna l'array "movies" fornito privo dell'elemento nella posizione ricevuta come parametro.
 */
 
+console.log("ESERCIZIO 19");
+
+const removeIndex = function (index) {
+  const filteredMovies = [];
+  for (let i = 0; i < movies.length; i++) {
+    const currentMovie = movies[i];
+    if (i !== index) {
+      filteredMovies.push(currentMovie);
+    }
+  }
+  return filteredMovies;
+};
+
+console.log(removeIndex(5));
+
 // DOM (nota: gli elementi che selezionerai non si trovano realmente nella pagina)
 
 /* ESERCIZIO 20
