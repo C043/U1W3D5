@@ -135,6 +135,12 @@ console.log("Il numero più grande fra 5 e 10 è:", whoIsBigger(5, 10));
   Es.: splitMe("I love coding") => ritorna ["I", "Love", "Coding"]
 */
 
+console.log("ESERCIZIO 3");
+
+const splitMe = (str) => str.split(" ");
+
+console.log("I love coding =>", splitMe("I love coding"));
+
 /* ESERCIZIO 4
   Crea una funzione chiamata "deleteOne" che riceve una stringa e un booleano come parametri.
   Se il valore booleano è true la funzione deve ritornare la stringa senza il primo carattere, altrimenti la deve ritornare senza l'ultimo.
