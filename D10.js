@@ -295,6 +295,22 @@ console.log(`Giorni passati da ${yesterday}: ${howManyDays(yesterday)}`);
   Scrivi una funzione chiamata "isTodayMyBirthday" che deve ritornare true se oggi è il tuo compleanno, falso negli altri casi.
 */
 
+console.log("ESERCIZIO 10");
+
+const isTodayMyBirthday = function () {
+  const myBirthdayMonth = new Date(1999, 4, 7).getMonth();
+  const myBirthdayDay = new Date(1999, 4, 7).getDate();
+  const todayMonth = new Date().getMonth();
+  const todayDay = new Date().getDate();
+  if (todayMonth === myBirthdayMonth && todayDay === myBirthdayDay) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+console.log("Oggi è il mio compleanno?", isTodayMyBirthday(yesterday));
+
 // Arrays & Oggetti
 
 // NOTA: l'array "movies" usato in alcuni esercizi è definito alla fine di questo file
