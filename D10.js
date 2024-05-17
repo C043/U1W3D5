@@ -586,6 +586,12 @@ console.log(getContainer());
   Scrivi una funzione per selezionare ogni tag <td> all'interno della pagina.
 */
 
+console.log("ESERCIZIO 21");
+
+const getTds = () => document.getElementsByTagName("td");
+
+console.log(getTds());
+
 /* ESERCIZIO 22
   Scrivi una funzione che, tramite un ciclo, stampa in console il testo contenuto in ogni tag <td> all'interno della pagina.
 */
