@@ -111,7 +111,7 @@ const dice = () => {
   return result;
 };
 
-dice();
+console.log(dice());
 
 /* ESERCIZIO 2
   Crea una funzione chiamata "whoIsBigger" che riceve due numeri come parametri e ritorna il maggiore dei due.
@@ -524,6 +524,13 @@ console.log(sumAllTheYears(movies));
 /* ESERCIZIO 17
   Scrivi una funzione chiamata "searchByTitle" che riceve una stringa come parametro e ritorna i film nell'array "movies" fornito che la contengono nel titolo.
 */
+
+console.log("ESERCIZIO 17");
+
+const searchByTitle = (str) =>
+  movies.filter((movie) => movie.Title.includes(str));
+
+console.log(searchByTitle("Lord"));
 
 /* ESERCIZIO 18
   Scrivi una funzione chiamata "searchAndDivide" che riceve una stringa come parametro e ritorna un oggetto contenente due array: "match" e "unmatch".
