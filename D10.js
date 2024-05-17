@@ -650,6 +650,16 @@ const removeLi = () => {
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
 */
 
+console.log("ESERCIZIO 26");
+
+const addsTestClass = () => {
+  const trs = document.getElementsByTagName("tr");
+  for (let i = 0; i < trs.length; i++) {
+    const currenTr = trs[i];
+    currenTr.classList.add("test");
+  }
+};
+
 // [EXTRA] JS Avanzato
 
 /* ESERCIZIO 27
