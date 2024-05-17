@@ -576,6 +576,12 @@ console.log(removeIndex(5));
   Scrivi una funzione per selezionare l'elemento dotato di id "container" all'interno della pagina.
 */
 
+console.log("ESERCIZIO 20");
+
+const getContainer = () => document.getElementById("container");
+
+console.log(getContainer());
+
 /* ESERCIZIO 21
   Scrivi una funzione per selezionare ogni tag <td> all'interno della pagina.
 */
