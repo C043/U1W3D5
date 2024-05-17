@@ -23,6 +23,12 @@ console.log(sum);
   Crea una variabile chiamata "random" e assegnaci un numero casuale tra 0 e 20 (deve essere generato dinamicamente a ogni esecuzione).
 */
 
+console.log("ESERCIZIO B");
+
+const random = Math.floor(Math.random() * 20);
+
+console.log(random);
+
 /* ESERCIZIO C
   Crea una variabile chiamata "me" e assegnaci un oggetto contenente le seguenti proprietà: name = il tuo nome, surname = il tuo cognome, age = la tua età.
 */
