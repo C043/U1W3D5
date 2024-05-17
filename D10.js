@@ -76,6 +76,15 @@ addSkills(me, skills);
   Crea un pezzo di codice per aggiungere un nuovo elemento all'array "skills" contenuto nell'oggetto "me".
 */
 
+console.log("ESERCIZIO F");
+
+const addSkill = function (obj, skill) {
+  obj.skills.push(skill);
+  console.log(obj);
+};
+
+addSkill(me, "ES6");
+
 /* ESERCIZIO G
   Crea un pezzo di codice per rimuovere programmaticamente l'ultimo elemento dall'array "skills" contenuto nell'oggetto "me".
 */
