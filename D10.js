@@ -169,6 +169,23 @@ console.log("I-love-coding, false =>", deleteOne("I-love-coding", false));
   Es.: onlyLetters("I have 4 dogs") => ritorna "I have dogs"
 */
 
+console.log("ESERCIZIO 5");
+
+const onlyLetters = function (str) {
+  const words = str.split(" ");
+  const convertedStr = [];
+  words.forEach((word) => {
+    const isNotNum = !parseInt(word);
+    if (isNotNum) {
+      convertedStr.push(word);
+    }
+  });
+  const final = convertedStr.join(" ");
+  return final;
+};
+
+console.log("I have 4 dogs =>", onlyLetters("I have 4 dogs"));
+
 /* ESERCIZIO 6
   Crea una funzione chiamata "isThisAnEmail" che riceve una stringa come parametro e ritorna true se la stringa è un valido indirizzo email.
 */
