@@ -674,6 +674,23 @@ const addsTestClass = () => {
 
 */
 
+console.log("ESERCIZIO 27");
+
+const halfTree = (n) => {
+  for (let i = 1; i <= n; i++) {
+    let string = "";
+    const stringMaker = [];
+    for (let b = 1; b <= i; b++) {
+      const asterisk = "*";
+      stringMaker.push(asterisk);
+      string = stringMaker.join("");
+    }
+    console.log(string);
+  }
+};
+
+halfTree(3);
+
 /* ESERCIZIO 28
   Crea una funzione chiamata "tree" che riceve un numero come parametro e costruisce un albero di "*" (asterischi) dell'altezza fornita.
 
