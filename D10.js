@@ -117,6 +117,18 @@ dice();
   Crea una funzione chiamata "whoIsBigger" che riceve due numeri come parametri e ritorna il maggiore dei due.
 */
 
+console.log("ESERCIZIO 2");
+
+const whoIsBigger = (a, b) => {
+  let biggerNum = a;
+  if (b > a) {
+    biggerNum = b;
+  }
+  return biggerNum;
+};
+
+console.log("Il numero più grande fra 5 e 10 è:", whoIsBigger(5, 10));
+
 /* ESERCIZIO 3
   Crea una funzione chiamata "splitMe" che riceve una stringa come parametro e ritorna un'array contenente ogni parola della stringa.
 
