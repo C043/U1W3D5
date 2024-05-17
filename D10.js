@@ -612,6 +612,16 @@ const printTds = () => {
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
 */
 
+console.log("ESERCIZIO 23");
+
+const addRedBg = () => {
+  const links = document.getElementsByTagName("a");
+  for (let i = 0; i < links.length; i++) {
+    const currentLink = links[i];
+    currentLink.style.backgroundColor = "red";
+  }
+};
+
 /* ESERCIZIO 24
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
 */
