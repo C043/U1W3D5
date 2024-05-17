@@ -626,6 +626,15 @@ const addRedBg = () => {
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
 */
 
+console.log("ESERCIZIO 24");
+
+const addLi = () => {
+  const myList = document.getElementById("myList");
+  const newLi = document.createElement("li");
+  newLi.innerText = "New List Item";
+  myList.appendChild(newLi);
+};
+
 /* ESERCIZIO 25
   Scrivi una funzione per svuotare la lista non ordinata con id "myList".
 */
