@@ -703,6 +703,28 @@ halfTree(3);
 
 */
 
+console.log("ESERCIZIO 28");
+
+const tree = (n) => {
+  let string = "";
+  for (let i = 1; i <= n; i++) {
+    const stringMaker = ["*"];
+    const spaceMaker = [];
+    for (let c = n; c > i; c--) {
+      let space = " ";
+      spaceMaker.unshift(space);
+    }
+    for (let b = 1; b <= i - 1; b++) {
+      const asterisk = "**";
+      stringMaker.push(asterisk);
+    }
+    string = spaceMaker.join("") + stringMaker.join("");
+    console.log(string);
+  }
+};
+
+tree(3);
+
 /* ESERCIZIO 29
   Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e ritorna true se il numero fornito è un numero primo.
 */
